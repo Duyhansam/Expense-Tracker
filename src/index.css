@@ -157,83 +157,77 @@ button {
 .result-card h2 {
   margin-top: 0;
 }
-+
-+/* Flashcard styles */
-+#flashcard-app {
-+  width: min(720px, 100%);
-+  margin: 0 auto;
-+  padding: 24px;
-+  background: #ffffff;
-+  border-radius: 20px;
-+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
-+  text-align: center;
-+}
-+
-+.flashcard-shell {
-+  perspective: 1000px;
-+  cursor: pointer;
-+}
-+
-+.flashcard {
-+  position: relative;
-+  width: 100%;
-+  min-height: 220px;
-+  border-radius: 18px;
-+  transform-style: preserve-3d;
-+  transition: transform 0.6s ease;
-+}
-+
-+.flashcard.flipped {
-+  transform: rotateY(180deg);
-+}
-+
-+.card-face {
-+  position: absolute;
-+  inset: 0;
-+  display: flex;
-+  align-items: center;
-+  justify-content: center;
-+  padding: 24px;
-+  border-radius: 18px;
-+  backface-visibility: hidden;
-+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.08);
-+}
-+
-+.card-face.front {
-+  background: #f8fafc;
-+}
-+
-+.card-face.back {
-+  background: #eff6ff;
-+  transform: rotateY(180deg);
-+}
-+
-+.card-face p {
-+  margin: 0;
-+  font-size: 1.2rem;
-+  line-height: 1.6;
-+  color: #1f2937;
-+}
-+
-+.flashcard-controls {
-+  display: flex;
-+  justify-content: center;
-+  gap: 12px;
-+  flex-wrap: wrap;
-+  margin-top: 20px;
-+}
-+
-+.flashcard-progress {
-+  margin-top: 18px;
-+  color: #475569;
-+  font-weight: 600;
-+}
-+
-+@media (max-width: 520px) {
-+  .card-face p {
-+    font-size: 1rem;
-+  }
-+}
+
+/* Flashcard styles */
+#flashcard-app {
+  width: min(720px, 100%);
+  margin: 0 auto;
+  padding: 24px;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+  text-align: center;
+}
+
+.flashcard-shell {
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.flashcard {
+  position: relative;
+  width: 100%;
+  min-height: 220px;
+  border-radius: 18px;
+  transform-style: preserve-3d;
+  transition: transform 0.6s ease;
+}
+
+.flashcard.flipped {
+  transform: rotateY(180deg);
+}
+
+.card-face {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  border-radius: 18px;
+  backface-visibility: hidden;
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.08);
+}
+
+.card-face.front {
+  background: #f8fafc;
+}
+
+.card-face.back {
+  background: #eff6ff;
+  transform: rotateY(180deg);
+}
+
+.card-face p {
+  margin: 0;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #1f2937;
+}
+
+.flashcard-controls {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.flashcard-progress {
+  margin-top: 18px;
+  color: #475569;
+  font-weight: 600;
+}
 
 /* Quiz specific styles */
 #quiz {
@@ -269,7 +263,10 @@ button {
   border: 2px solid #e6edf3;
   background: #fbfdff;
   font-size: 1rem;
-  transition: background-color 160ms ease, border-color 160ms ease, transform 120ms ease;
+  transition:
+    background-color 160ms ease,
+    border-color 160ms ease,
+    transform 120ms ease;
 }
 
 .options button:hover:not(:disabled) {
@@ -581,11 +578,11 @@ button {
   background: #f8fafc;
   border: 1px solid #e5e7eb;
   border-radius: 20px;
-transition:
-  border-color 0.3s ease,
-  box-shadow 0.3s ease;
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
 }
-    .expense-search:focus-within {
+.expense-search:focus-within {
   border-color: #2563eb;
   box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.12);
 }
@@ -720,7 +717,8 @@ transition:
 .expense-left {
   display: flex;
   flex-direction: column;
-  gap: 6px;}
+  gap: 6px;
+}
 
 .expense-meta {
   display: flex;
@@ -740,7 +738,7 @@ transition:
   font-weight: 700;
   color: #111827;
   white-space: nowrap;
-    min-width: 130px;
+  min-width: 130px;
   text-align: right;
 }
 .expense-summary {
@@ -933,4 +931,9 @@ transition:
   color: #ef4444;
   font-weight: 700;
   margin-top: 8px;
+}
+@media (max-width: 768px) {
+  .dashboard {
+    grid-template-columns: 1fr;
+  }
 }
