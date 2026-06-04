@@ -37,4 +37,4 @@ npm run dev
 
 ## Tác giả
 
-Nguyễn Tiến Duy
+Duyhansam
