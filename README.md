@@ -4,15 +4,18 @@
 
 ## Tính năng
 
-* Thêm khoản chi tiêu
-* Chỉnh sửa khoản chi tiêu
-* Xóa khoản chi tiêu
-* Tìm kiếm khoản chi tiêu
-* Lọc theo tháng
-* Lọc theo danh mục
-* Thống kê tổng chi tiêu
-* Thiết lập ngân sách tháng
-* Lưu dữ liệu bằng Local Storage
+- Thêm khoản chi tiêu
+- Chỉnh sửa khoản chi tiêu
+- Xóa khoản chi tiêu
+- Tìm kiếm khoản chi tiêu
+- Lọc theo danh mục
+- Lọc theo khoảng thời gian
+- Lọc theo mức chi tiêu
+- Sắp xếp danh sách chi tiêu
+- Thiết lập ngân sách tháng
+- Thống kê tổng chi tiêu
+- Biểu đồ chi tiêu theo tháng
+- Lưu dữ liệu bằng Local Storage
 
 ## Công nghệ sử dụng
 
